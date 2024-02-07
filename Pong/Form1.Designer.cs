@@ -33,6 +33,10 @@
             this.startLabel = new System.Windows.Forms.Label();
             this.player1ScoreLabel = new System.Windows.Forms.Label();
             this.plaery2ScoreLabel = new System.Windows.Forms.Label();
+            this.player1PowerCountLabel = new System.Windows.Forms.Label();
+            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.label1 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // gameUpdateLoop
@@ -82,12 +86,38 @@
             this.plaery2ScoreLabel.Text = "0";
             this.plaery2ScoreLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // player1PowerCountLabel
+            // 
+            this.player1PowerCountLabel.AutoSize = true;
+            this.player1PowerCountLabel.BackColor = System.Drawing.Color.MidnightBlue;
+            this.player1PowerCountLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.player1PowerCountLabel.ForeColor = System.Drawing.Color.White;
+            this.player1PowerCountLabel.Location = new System.Drawing.Point(12, 9);
+            this.player1PowerCountLabel.Name = "player1PowerCountLabel";
+            this.player1PowerCountLabel.Size = new System.Drawing.Size(68, 40);
+            this.player1PowerCountLabel.TabIndex = 3;
+            this.player1PowerCountLabel.Text = "PRESS \r\n   \"E\"   ";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Firebrick;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(521, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(71, 40);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "PRESS \r\n\"Right\"   ";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(616, 450);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.player1PowerCountLabel);
             this.Controls.Add(this.plaery2ScoreLabel);
             this.Controls.Add(this.player1ScoreLabel);
             this.Controls.Add(this.startLabel);
@@ -99,7 +129,9 @@
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.Form1_Paint);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyUp);
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -109,6 +141,9 @@
         private System.Windows.Forms.Label startLabel;
         private System.Windows.Forms.Label player1ScoreLabel;
         private System.Windows.Forms.Label plaery2ScoreLabel;
+        private System.Windows.Forms.Label player1PowerCountLabel;
+        private System.Windows.Forms.BindingSource bindingSource1;
+        private System.Windows.Forms.Label label1;
     }
 }
 
